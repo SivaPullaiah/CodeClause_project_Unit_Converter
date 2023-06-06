@@ -1,0 +1,226 @@
+* {
+    font-family: 'gilmer', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+.black {
+    color: #000;
+}
+.white {
+color: rgba(255, 255, 255, 0.7);
+}
+
+/* nav */
+.header-contatiner-resume {
+    width: 100%;
+}
+.blur-header {
+    background-color: #9393931a;
+    backdrop-filter: blur(20px);
+}
+.char-linear-grad {
+    background: linear-gradient(to right, #240b36, #c31432);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.wrapper {
+background: rgba(128, 128, 128, 0);
+position: relative;
+}
+.background-shape {
+background: #3a86ff;
+width: 100%;
+height: 300px;
+-ms-transform: skewY(-20deg);
+-webkit-transform: skewY(-20deg);
+transform: skewY(-20deg);
+border-radius: 30px;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.content {
+color: white;
+position: relative;
+top: 120px; 
+z-index: 10;
+}
+
+
+  /* unit converter */
+.unit-nav-item{
+    background-color: #006633;
+    color: white;
+    border: 0;
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: 0.8px;
+}
+.unit-nav-item-active{
+    background-color: #eee;
+    color: #006633;
+    border: 1px solid #888;
+    border-bottom: 0;   
+}
+.main-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.main-container h2 span{
+    color: #006633;
+}
+.unit-container{
+    padding: 10px;
+    background-color: #eee;
+    border:1px solid #888;
+    min-height: 300px;
+}
+.unit-container table{
+    text-align: left;
+    row-gap: 20px;
+    border-spacing: 20px 10px;
+}
+.unit-container table tr input{
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 20px;
+    width:95%;
+}
+.unit-container table tr input:disabled{
+    color: black;
+}
+.unit-container table tr select{
+    width:100%;
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.result{
+    text-align: center;
+}
+.result>p> b{
+    color: red;
+    font-weight: 700;
+}
+
+/* footer */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('https://lf16-fe.resso.me/obj/anote-fe/socrates/home-web/static/media/Gilmer-Outline.2825e847.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .Gilmer-Outline {
+    font-family: 'CustomFont', sans-serif;
+    }
+    @font-face {
+    font-family: 'Gilmer';
+    src: url('https://lf16-fe.resso.me/obj/anote-fe/socrates/home-file/static/media/Gilmer-Medium.71f3c551.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .gilmer {
+    font-family: 'Gilmer', sans-serif;
+    }
+    
+    @font-face {
+    font-family: 'Bard-font';
+    src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .bard-font {
+    font-family: 'Bard-font', sans-serif;
+    }
+    
+    footer {
+    position: relative;
+    overflow: hidden;
+    }
+    
+    #footer-video {
+    border-top-left-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
+    
+    .footer-content {
+    /* Style your footer content as desired */
+    color: #fff;
+    padding: 20px;
+    }
+    .footer-head {
+    font-size: 95px;
+    font-weight: bold;
+    }
+    .strink-img {
+    height: 250px;
+    }
+    @media (max-width: 767px) {
+    .footer-head {
+        font-size: 40px;
+    }
+    .strink-img {
+        height: 80px;
+    }
+    .pro1-banner {
+        width: 350px;
+    }
+    .strink-font-size{
+        font-size: 24px;
+    }
+    }
+    
+    #mail:hover {
+    text-decoration: none;
+    }
+    .hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: 90%;
+    }
+    
+    /* follow */
+    .fa-brands {
+        color: black;
+        padding-right: 20px;
+        font-size: 22px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .fa-brands:hover,
+    a:hover {
+        color: #fb5607 !important;
+    }

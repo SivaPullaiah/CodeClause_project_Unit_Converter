@@ -1,88 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Gilmer:wght@400&display=swap" rel="stylesheet">
-        <link rel="icon" href="https://res.cloudinary.com/sivapullaiah/image/upload/v1686054078/unit_converter_logo_vs50xw.png">
-        <title>Unit converter</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Gilmer:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://res.cloudinary.com/sivapullaiah/image/upload/v1686054078/unit_converter_logo_vs50xw.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Unit Converter</title>
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <!-- for follow imgs -->
-        <script src="https://kit.fontawesome.com/4fe251b024.js"></script>
-        <!-- scroll blur effect -->
-    </head>
-<body>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+    <!-- for follow imgs -->
+    <script src="https://kit.fontawesome.com/4fe251b024.js"></script>
+
+  </head>
+  <body>
     <!-- navbar -->
     <div class="header-contatiner-resume fixed-top" id="home">
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand ml-3" href="#"><img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1686054078/unit_converter_logo_vs50xw.png" height="60" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fa-solid fa-bars"></i></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-5">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#articles">Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#project">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#blogs">Blogs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-    </div>
-    <script src="scripts/blur.js"></script>
+      <nav class="navbar navbar-expand-sm navbar-light">
+          <a class="navbar-brand ml-3" href="#"><img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1686054078/unit_converter_logo_vs50xw.png" height="35" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-5">
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#articles">Articles</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#blogs">Blogs</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+          </div>
+      </nav>
+  </div>
+  <script src="js/blur.js"></script>
 
     <!-- unit converter -->
+    <div class="main-container">
+      <h2>Unit <span>Converter</span></h2>
+      <span class="unit-navbar"></span>
+      <div class="unit-container">
+        <table>
+          <thead>
+            <tr>
+              <td class="result" colspan="2"></td>
+            </tr>
+            <tr>
+              <th><label for="from">From.</label></th>
+              <th><label for="to">To.</label></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="number" id="from" oninput="calculateUnit()" />
+              </td>
+              <td>
+                <input type="number" id="to" disabled />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <select
+                  name="from_select"
+                  id="from-select"
+                  size="11"
+                  onchange="calculateUnit()"
+                ></select>
+              </td>
+              <td>
+                <select
+                  name="to_select"
+                  id="to-select"
+                  size="11"
+                  onchange="calculateUnit()"
+                ></select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./data/data.js"></script>
+    <script src="./js/index.js"></script>
 
-    
-    <!-- footer -->
-    <footer id="contact" class="mt-3">
-        <video id="footer-video" autoplay muted loop>
-          <source src="https://res.cloudinary.com/sivapullaiah/video/upload/v1685940348/gradient.06f37abf_1_iyb6gv.mp4" type="video/mp4">
-        </video>
-        <div class="footer-content">
-          <!-- Your footer content goes here -->
-            <div class="row d-flex flex-column text-center">
-                <div class="d-flex flex-row justify-content-center" style="align-items: center;">
-                    <img class="strink-img mr-2 image-angle" src="https://res.cloudinary.com/sivapullaiah/image/upload/v1686054078/unit_converter_logo_vs50xw.png" alt="">
-                    <div class="thanks">
-                        <h1 class="Gilmer-Outline white footer-head">Codding is</h1>
-                        <h1 class="white footer-head gilmer">Everything.</h1>
-                    </div>
-                </div>
-                <hr>
-                <div class="d-flex flex-row justify-content-center" style="align-items: center;">
-                    <div class="contact mr-5">
-                        <butto title="click me" class="btn btn-primary"><a id="mail" class="white" href="mailto:mangalisivapullaiah@gmail.com?subject=Hello%20from%20my%20website&body=I%20wanted%20to%20reach%20out%20to%20you%20regarding...">Contact me</a></button>
-                    </div>
-                    <div class="follow ml-5">
-                        <a href="https://www.linkedin.com/in/sivapullaiahmangali/" target="_blank"><span class="fa-brands fa-linkedin-in white"></span></a>
-                        <a href="https://www.behance.net/sivapullaiah/" target="_blank"><span class="fa-brands fa-behance white"></span></a>
-                        <a href="https://github.com/SivaPullaiah/" target="_blank"><span class="fa-brands fa-github white"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="final-step">
-            <hr class="hr">
-            <p class="text-center white">Created with <i class="fa-solid fa-heart" style="color: #e63946;"></i> by { CodeClause };</p>
-            <!-- <a href="https://www.vecteezy.com/free-vector/infinity-arrow">Infinity Arrow Vectors by Vecteezy</a> -->
-        </div>
-    </footer>
-</body>
+        <!-- footer -->
+        <footer id="contact" class="mt-3">
+          <video id="footer-video" autoplay muted loop>
+            <source src="https://res.cloudinary.com/sivapullaiah/video/upload/v1685940348/gradient.06f37abf_1_iyb6gv.mp4" type="video/mp4">
+          </video>
+          <div class="footer-content">
+            <!-- Your footer content goes here -->
+              <div class="row d-flex flex-column text-center">
+                  <div class="d-flex flex-row justify-content-center" style="align-items: center;">
+                      <img class="strink-img mr-2 image-angle" src="https://res.cloudinary.com/sivapullaiah/image/upload/v1686054078/unit_converter_logo_vs50xw.png" alt="">
+                      <div class="thanks">
+                          <h1 class="Gilmer-Outline white footer-head">Codding is</h1>
+                          <h1 class="white footer-head gilmer">Everything.</h1>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex flex-row justify-content-center" style="align-items: center;">
+                      <div class="contact mr-5">
+                          <butto title="click me" class="btn btn-primary"><a id="mail" class="white" href="mailto:mangalisivapullaiah@gmail.com?subject=Hello%20from%20my%20website&body=I%20wanted%20to%20reach%20out%20to%20you%20regarding...">Contact me</a></button>
+                      </div>
+                      <div class="follow ml-5">
+                          <a href="https://www.linkedin.com/in/sivapullaiahmangali/" target="_blank"><span class="fa-brands fa-linkedin-in white"></span></a>
+                          <a href="https://www.behance.net/sivapullaiah/" target="_blank"><span class="fa-brands fa-behance white"></span></a>
+                          <a href="https://github.com/SivaPullaiah/" target="_blank"><span class="fa-brands fa-github white"></span></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="final-step">
+              <hr class="hr">
+              <p class="text-center white">Created with <i class="fa-solid fa-heart" style="color: #e63946;"></i> by { CodeClause };</p>
+              <!-- <a href="https://www.vecteezy.com/free-vector/infinity-arrow">Infinity Arrow Vectors by Vecteezy</a> -->
+          </div>
+      </footer>
+  
+  </body>
 </html>
