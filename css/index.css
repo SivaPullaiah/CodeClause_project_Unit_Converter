@@ -8,6 +8,10 @@
 .white {
 color: rgba(255, 255, 255, 0.7);
 }
+/* .test {
+    display: flex;
+    justify-content: center;
+} */
 
 /* nav */
 .header-contatiner-resume {
@@ -56,6 +60,8 @@ z-index: 10;
 
   /* unit converter */
 .unit-nav-item{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: #006633;
     color: white;
     border: 0;
@@ -68,10 +74,17 @@ z-index: 10;
     top: 0.8px;
 }
 .unit-nav-item-active{
+    width: auto;
+    height: auto;
     background-color: #eee;
     color: #006633;
     border: 1px solid #888;
     border-bottom: 0;   
+}
+.unit-nav-item-active:active,
+.unit-nav-item-active:focus {
+    outline: none;
+    box-shadow: none;
 }
 .main-container h2{
     text-align: center;

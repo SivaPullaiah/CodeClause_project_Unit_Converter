@@ -48,49 +48,61 @@
   <script src="js/blur.js"></script>
 
     <!-- unit converter -->
-    <div class="main-container">
+    <div class="container main-container">
       <h2>Unit <span>Converter</span></h2>
       <span class="unit-navbar"></span>
-      <div class="unit-container">
-        <table>
-          <thead>
-            <tr>
-              <td class="result" colspan="2"></td>
-            </tr>
-            <tr>
-              <th><label for="from">From.</label></th>
-              <th><label for="to">To.</label></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <input type="number" id="from" oninput="calculateUnit()" />
-              </td>
-              <td>
-                <input type="number" id="to" disabled />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <select
-                  name="from_select"
-                  id="from-select"
-                  size="11"
-                  onchange="calculateUnit()"
-                ></select>
-              </td>
-              <td>
-                <select
-                  name="to_select"
-                  id="to-select"
-                  size="11"
-                  onchange="calculateUnit()"
-                ></select>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-6 unit-container">
+            <table>
+              <thead>
+                <!-- <tr>
+                  <td class="result" colspan="2"></td>
+                </tr> -->
+                <!-- <tr>
+                  <th><label for="from">From.</label></th>
+                  <th><label for="to">To.</label></th>
+                </tr> -->
+              </thead>
+              <tbody>
+                <tr>
+                  <th><label for="from">From.</label></th>
+                  <th><label for="to">To.</label></th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="number" id="from" placeholder="Enter value" oninput="calculateUnit()" />
+                  </td>
+                  <td>
+                    <input type="number" placeholder="Result" id="to" disabled />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <select
+                      name="from_select"
+                      id="from-select"
+                      size="11"
+                      onchange="calculateUnit()"
+                    ></select>
+                  </td>
+                  <td>
+                    <select
+                      name="to_select"
+                      id="to-select"
+                      size="11"
+                      onchange="calculateUnit()"
+                    ></select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="result" colspan="2" aria-placeholder="hello"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 col-xl-6">hello this unit coverter</div>
+        </div>
       </div>
     </div>
     <script src="./data/data.js"></script>
