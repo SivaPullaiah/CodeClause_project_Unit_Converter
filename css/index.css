@@ -62,6 +62,16 @@ top: 120px;
 z-index: 10;
 }
 
+@media (max-width: 767px) {
+    .image1test {
+      display: none;
+    }
+  }
+
+.units-link {
+    background-color: rgb(102, 102, 102, 0.3);
+    border-radius: 10px;
+}
 
   /* unit converter */
 .unit-nav-item{

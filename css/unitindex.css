@@ -1,0 +1,53 @@
+* {
+    font-family: 'gilmer', sans-serif;
+    color: #1d1d1f;
+}
+@font-face {
+font-family: 'CustomFont';
+src: url('https://lf16-fe.resso.me/obj/anote-fe/socrates/home-web/static/media/Gilmer-Outline.2825e847.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+.Gilmer-Outline {
+font-family: 'CustomFont', sans-serif;
+}
+@font-face {
+font-family: 'Gilmer';
+src: url('https://lf16-fe.resso.me/obj/anote-fe/socrates/home-file/static/media/Gilmer-Medium.71f3c551.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+.gilmer {
+font-family: 'Gilmer', sans-serif;
+}
+
+@font-face {
+font-family: 'Bard-font';
+src: url('https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+.bard-font {
+font-family: 'Bard-font', sans-serif;
+}
+
+#body {
+    background-color: #f5f5f7;
+}
+
+.headding {
+    align-items: center;
+}
+
+p {
+    color: rgba(0, 0, 0, .7);
+    font-size: 14px;
+}
+
+#back{
+    text-decoration: none;
+    color: #f5f5f7;
+}
+.btn {
+    height: 35px;
+}
