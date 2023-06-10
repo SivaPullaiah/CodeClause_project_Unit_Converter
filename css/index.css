@@ -88,6 +88,7 @@ z-index: 10;
     position: relative;
     top: 0.8px;
 }
+
 .unit-nav-item-active{
     width: auto;
     height: auto;
@@ -166,7 +167,11 @@ input::-webkit-inner-spin-button {
 #from, #to {
     border-radius: 12px;
 }
+
 /*tipped element. should be inline-block or block*/
+#leftalign {
+    text-align: right;
+}
 .qtip {
     display: inline-block;
     position: relative;
@@ -175,9 +180,6 @@ input::-webkit-inner-spin-button {
     transition:all .25s ease-in-out
   }
   /*the tip*/
-#leftalign {
-    text-align: right;
-}
   .qtip:before {
     content: attr(data-tip);
     font-size: 14px;
@@ -236,13 +238,54 @@ input::-webkit-inner-spin-button {
     border-top-right-radius: 20px;
 }
 .info-sec{
+    padding: 10px;
     border-right: 2px solid rgb(226, 232, 240);
-    border-left: 2px solid rgb(226, 232, 240);
-    border-bottom: 2px solid rgb(226, 232, 240);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  border-left: 2px solid rgb(226, 232, 240);
+  border-bottom: 2px solid rgb(226, 232, 240);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
- 
+/* impclass */
+.test-widget-container, .new {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: 100px;
+    background: radial-gradient(100% 773.98% at 0% 0%, #ffffff 0%, #edf7ff 80.73%);
+    border-radius: 12px;
+    margin: auto;
+    border: .5px solid #5780e9
+}
+/* imp class */
+.quick-action-container[attribute] {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4px 8px;
+    gap: 4px;
+    isolation: isolate;
+    width: 90.57px;
+    height: 30px;
+    background: #5780e9;
+    border-radius: 8px 0;
+    color: #f1f2f2
+}
+
+
+/* imp class */
+.shimmer[attribute] {
+    -webkit-mask: linear-gradient(-60deg, #000 30%, rgba(0, 0, 0, .3333333333), #000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shine 2.5s infinite
+}
+
+@keyframes shine {
+    to {
+        -webkit-mask-position: left
+    }
+}
 /* footer */
 @font-face {
     font-family: 'CustomFont';
