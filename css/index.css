@@ -228,6 +228,20 @@ input::-webkit-inner-spin-button {
     left: 50%;
     transform: translate(-50%, 0);
   }
+
+.info-banner {
+    height: 40% min-content;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.info-sec{
+    border-right: 2px solid rgb(226, 232, 240);
+    border-left: 2px solid rgb(226, 232, 240);
+    border-bottom: 2px solid rgb(226, 232, 240);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
  
 /* footer */
 @font-face {
