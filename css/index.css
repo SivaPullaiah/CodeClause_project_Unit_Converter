@@ -13,10 +13,9 @@
 .white {
 color: rgba(255, 255, 255, 0.7);
 }
-/* .test {
-    display: flex;
-    justify-content: center;
-} */
+.home-head {
+    font-size: 96px;
+}
 
 /* nav */
 .header-contatiner-resume {
@@ -355,6 +354,9 @@ input::-webkit-inner-spin-button {
         width: 350px;
     }
     .strink-font-size{
+        font-size: 24px;
+    }
+    .home-head {
         font-size: 24px;
     }
     }
