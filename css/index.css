@@ -61,12 +61,6 @@ top: 120px;
 z-index: 10;
 }
 
-@media (max-width: 767px) {
-    .image1test {
-      display: none;
-    }
-  }
-
 .units-link {
     background-color: rgb(102, 102, 102, 0.3);
     border-radius: 10px;
@@ -359,6 +353,9 @@ input::-webkit-inner-spin-button {
     .home-head {
         font-size: 24px;
     }
+    .image1test {
+        display: none;
+      }
     }
     
     #mail:hover {
