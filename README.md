@@ -10,7 +10,8 @@ I'm thrilled to present ✨ my latest project 💪🦾, InfiUnit - a comprehensi
        https://sivapullaiah.github.io/CodeClause_project_Unit_Converter/index.html
 
 <pre>
-With InfiUnit, you can effortlessly convert between various units, including some of the most common conversions like:
+With InfiUnit, you can effortlessly convert between various units,
+including some of the most common conversions like:
 📐 cm to inches | inches to cm
 📐 inches to feet | feet to inches
 🌡️ Celsius to Fahrenheit | Fahrenheit to Celsius
