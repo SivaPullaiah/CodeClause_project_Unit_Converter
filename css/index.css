@@ -7,6 +7,10 @@
     background-color: #f5f5f7;
 }
 
+.container {
+    overflow-x: hidden;
+}
+
 .black {
     color: #1d1d1f;
 }
@@ -350,13 +354,16 @@ input::-webkit-inner-spin-button {
     .strink-font-size{
         font-size: 24px;
     }
-    .home-head {
-        font-size: 24px;
-    }
     .image1test {
         display: none;
       }
     }
+
+    @media (min-width: 768px) or (max-width: 1023px) {
+    .home-head {
+        font-size: 34px;
+    }
+}
     
     #mail:hover {
     text-decoration: none;
